@@ -35,7 +35,7 @@
 
 .buttons {
   position: static;
-  display: block;
+  display: inline-block;
   margin-top: 10px;
   margin-bottom: 0px;
   margin-left: 20px;
@@ -54,7 +54,12 @@
   background-image: -webkit-gradient(linear, left top, right top, from(#de0f1d), to(#272a86));
   background-image: linear-gradient(90deg, #de0f1d, #272a86);
   box-shadow: 7px 7px 2px 0 rgba(112, 94, 73, 0.15);
+  opacity: 1;
   text-align: left;
+}
+
+.buttons:hover {
+  opacity: 1;
 }
 
 .container {
@@ -407,11 +412,14 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -436,7 +444,11 @@
 }
 
 .footer-list.footer-hidden {
-  display: none;
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .footer-links {
@@ -532,9 +544,9 @@
 }
 
 .section-12 {
-  display: none;
+  display: block;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
   border-top: 1px none #e2e2e2;
   background-color: rgba(65, 59, 64, 0);
 }
@@ -542,6 +554,10 @@
 .section-12.bordered-section {
   padding-bottom: 75px;
   border-top-style: solid;
+}
+
+.section-12.bordered-section.hidden-section {
+  display: none;
 }
 
 .section-11 {
@@ -816,6 +832,7 @@
   font-family: Montserrat, sans-serif;
   color: #de0f1d;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .news-item-source-img {
@@ -825,7 +842,7 @@
 }
 
 .div-block-4 {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .news-item-source-title {
@@ -940,6 +957,18 @@
   padding-bottom: 100px;
 }
 
+.section-15.hidden.bg-new {
+  background-image: url('../images/spary-1.png');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.section-15.bg-new {
+  background-image: url('../images/spary-2.png');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
 .slide-nav-2 {
   position: static;
   display: none;
@@ -1023,10 +1052,13 @@
 }
 
 .div-block-7 {
-  border-right: 2px none #000;
+  border-style: solid;
+  border-width: 0px 1px 0px 0px;
+  border-color: #d9d9d9;
 }
 
 .roadmap-q1-left {
+  display: inline-block;
   padding-top: 0px;
   padding-right: 50px;
   padding-left: 0px;
@@ -1035,6 +1067,7 @@
 .roadmap-img-left {
   padding-top: 25px;
   padding-right: 30px;
+  border-right: 1px solid #d9d9d9;
 }
 
 .roadmap-img-right {
@@ -1096,7 +1129,7 @@
 .roadmap-div-right {
   margin-left: -1px;
   padding-left: 25px;
-  border-left: 1px solid #d9d9d9;
+  border-left: 0px none #d9d9d9;
 }
 
 .bubble-roadmap-1 {
@@ -1116,6 +1149,10 @@
   left: -11px;
   top: 0px;
   border-color: #272a86;
+}
+
+.bubble-roadmap-1.hidden {
+  left: 460px;
 }
 
 .roadmap-div-left {
@@ -1141,6 +1178,49 @@
   position: absolute;
   left: 22px;
   top: 10px;
+}
+
+.dropdown-list {
+  background-color: #fff;
+}
+
+.dropdown-link {
+  background-color: #fff;
+}
+
+.link-block-2 {
+  display: block;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.link-block-2:hover {
+  background-color: #e0e0e0;
+  opacity: 1;
+}
+
+.image-24 {
+  width: 18px;
+  height: auto;
+  padding: 1px;
+}
+
+.dropdown {
+  background-color: #fff;
+}
+
+.menu-button {
+  display: none;
+}
+
+.image-25 {
+  width: 18px;
+  padding: 1px;
+}
+
+.image-26 {
+  width: 18px;
+  padding: 1px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1282,6 +1362,10 @@
 
   .nav-grid {
     text-align: center;
+  }
+
+  .team.team-member {
+    margin-bottom: 20px;
   }
 
   .section-7 {
