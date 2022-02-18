@@ -401,6 +401,10 @@
   text-decoration: none;
 }
 
+.social.mobile {
+  display: none;
+}
+
 .pow {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -453,6 +457,10 @@
 
 .footer-links {
   color: #fff;
+}
+
+.footer-links.hidden {
+  display: none;
 }
 
 .footer-item {
@@ -1274,9 +1282,39 @@
     margin-left: 5px;
   }
 
+  .social {
+    width: 130px;
+    padding: 15px 5px;
+    text-align: center;
+  }
+
+  .social.mobile {
+    display: inline-block;
+    width: 130px;
+    margin-right: 15px;
+    margin-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    text-align: center;
+  }
+
   .pow {
     padding-right: 25px;
     padding-left: 26px;
+  }
+
+  .sub-header-text {
+    line-height: 36px;
+  }
+
+  .news-item-header {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .whitepaper-link {
+    font-size: 15px;
   }
 
   .div-block-5 {
@@ -1381,6 +1419,14 @@
     display: block;
   }
 
+  .social {
+    width: 150px;
+  }
+
+  .social.mobile {
+    width: 150px;
+  }
+
   .pow {
     padding-top: 50px;
   }
@@ -1394,6 +1440,23 @@
 
   .footer-list.footer-hidden {
     display: none;
+  }
+
+  .sub-header-text {
+    padding-top: 0px;
+  }
+
+  .slide {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .image-16 {
+    display: none;
+  }
+
+  .news-item-header {
+    padding-right: 0px;
   }
 
   .text-desc.roadmap-desc {
@@ -1459,11 +1522,46 @@
     width: 40px;
   }
 
+  .social {
+    width: 150px;
+    margin-right: 5px;
+    margin-bottom: 12px;
+    margin-left: 5px;
+  }
+
+  .social.mobile {
+    display: inline-block;
+    width: 150px;
+    margin: 0px 5px 12px;
+  }
+
   .sub-header-text {
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-size: 12px;
+    line-height: 16px;
+  }
+
+  .slide {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .news-item-header {
+    padding-right: 0px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .div-block-4 {
+    margin-top: 20px;
   }
 
   .section-15.hidden {
+    display: none;
+  }
+
+  .container-12 {
     display: none;
   }
 
