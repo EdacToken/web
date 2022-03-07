@@ -287,6 +287,19 @@
   font-size: 15px;
 }
 
+.nav-url:hover {
+  color: #de0f1d;
+}
+
+.nav-url.lang-nav {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.nav-url.nav-lang {
+  margin-top: -20px;
+}
+
 .section-5 {
   height: 50px;
   background-color: transparent;
@@ -1318,6 +1331,22 @@
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
+}
+
+.hiveon {
+  position: relative;
+  padding: 20px;
+}
+
+.hiveon:hover {
+  opacity: 0.6;
+}
+
+.image-29 {
+  position: relative;
+  margin-top: -2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 @media screen and (max-width: 991px) {
