@@ -1285,6 +1285,41 @@
   background-image: linear-gradient(90deg, #3861fb, #4448c2);
 }
 
+.link-2 {
+  color: #fff;
+}
+
+.section-17 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container-13 {
+  text-align: center;
+}
+
+.aggregators {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+}
+
+.aggregator {
+  margin: 10px 20px;
+  -webkit-transform: scale3d(1none, 1none, 1none);
+  transform: scale3d(1none, 1none, 1none);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.aggregator:hover {
+  opacity: 0.6;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
 @media screen and (max-width: 991px) {
   .buttons {
     display: none;
