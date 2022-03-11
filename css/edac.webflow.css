@@ -1156,6 +1156,7 @@
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  display: none;
 }
 
 .image-22 {
