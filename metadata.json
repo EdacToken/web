@@ -2,6 +2,6 @@
   "name": "EDAC Pool",
   "ticker": "EDAC",
   "description": "The EDAC staking pool utilizes generated rewards and a 2% fee to repurchase EDAC, boosting its price and strengthening the project on the BSC network. Our goal is to support EDAC's value through staking and community growth.",
-  "homepage": "https://t.me/edac_io",
+  "homepage": "https://edactoken.github.io/web/",
   "extended": "https://github.com/EdacToken/web/blob/main/extendedmetadata.json"
 }
