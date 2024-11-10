@@ -1,0 +1,12 @@
+{
+  "info": {
+    "telegram": "https://t.me/edac_io",
+    "twitter": "https://twitter.com/edac_token"
+  },
+  "features": [
+    {
+      "name": "EDAC Sustainability",
+      "description": "We support EDAC's value through token buybacks using rewards from staking on Cardano."
+    }
+  ]
+}
